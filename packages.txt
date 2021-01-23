@@ -1,0 +1,13 @@
+bash--
+cmus--
+dunst--
+emacs--
+feh--
+hsetroot--
+htop--
+ncspot--
+otterbrowser--
+picom--
+scrot--
+tree--
+vim--
