@@ -1,20 +1,9 @@
-export PATH=$HOME/bin:$PATH
+hsetroot -solid "#FDF6E3"
 
-## SET LOCALE
-export LANG="en_AU.UTF-8"
-export LC_CTYPE="en_AU.UTF-8"
+#exec sowm
 
-## DISABLE SYSTEM BEEP
-xset b off
+#exec bspwm
 
-## LOAD XRESOURCES
-xrdb ~/.Xresources
+#exec sdorfehs
 
-## CORE APPS
-feh --randomize --bg-fill ~/img/Wallpaper/ &
-dunst &
-
-## CWM Set-up
-#------------------------------------------------
 exec cwm
-
