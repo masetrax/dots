@@ -6,7 +6,7 @@ if [ $(uname -s) = "OpenBSD" ]; then
 else [ $(uname -s) = "NetBSD" ]; 
     xrdb ~/.Xresources
     sxhkd -c "$HOME/.config/berry/sxhkdrc" &
-    exec berrywm
+    exec berry
     #exec ctwm
     exit 1
 fi
