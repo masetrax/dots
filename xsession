@@ -1,9 +1,9 @@
 hsetroot -solid "#FDF6E3"
 
-#exec sowm
-
-#exec bspwm
-
-#exec sdorfehs
-
-exec cwm
+if [ $(uname -s) = "OpenBSD" ]; then
+    xrdb ~/.Xdefaults
+    exec cwm
+else [ $uname -s) = "NetBSD" ]; 
+    xrdb ~/.Xresources
+    sxhkd -c "$HOME/.config/berry/sxhkdrc" &
+    exec berrywm
