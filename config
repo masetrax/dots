@@ -8,8 +8,8 @@ bind C-s split
 bind S hsplit
 bind C-S hsplit
 
-bind c exec xterm
-bind C-c exec xterm
+bind c exec urxvt
+bind C-c exec urxvt
 
 # lock the screen
 bind L exec xset s activate

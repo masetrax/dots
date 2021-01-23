@@ -4,11 +4,11 @@
 
 # terminal emulator
 super + Return
-    uxterm
+    urxvt
 
 # file manager
 super + shift + f
-    uxterm -e nnn
+    urxvt -e nnn
 
 # program launcher
 super + d

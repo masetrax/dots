@@ -355,8 +355,8 @@ Button3 = mod4	: window 	: f.resize
 #
 
 # it is useful to be able to spawn a terminal without clicking.
-"Return" = mod1 | c : all : !"uxterm &"
-"Return" = mod4 | s : all : !"uxterm &"
+"Return" = mod1 | c : all : !"urxvt &"
+"Return" = mod4 | s : all : !"urxvt &"
 
 "slash"  = mod1 | c : all : f.menu "TwmAllWindows"
 "slash"  = mod4 : all     : f.menu "TwmAllWindows"
