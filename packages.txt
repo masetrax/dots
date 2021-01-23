@@ -6,8 +6,11 @@ feh--
 hsetroot--
 htop--
 ncspot--
-otterbrowser--
+noto-fonts--
+otter-browser--
 picom--
 scrot--
+sxiv--
+terminus--
 tree--
 vim--
