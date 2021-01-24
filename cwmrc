@@ -9,7 +9,7 @@ color menubg 		"#FDF6E3"
 color menufg 		"#323232"
 color font 		"#323232"
 color selfont 		"#FDF6E3"
-fontname 		"Terminus:size=9:bold"
+fontname 		"monospace:size=10:bold"
 gap 20 20 20 20
 
 # WINDOW SNAPPING
@@ -90,7 +90,7 @@ bind-key 4-h		window-htile
 # CUSTOM APPLICATION KEY BINDINGS
 bind-key 4S-s		/home/masetrax/.code/dmenu_bar.sh
 bind-key 4-Return 	"urxvt"
-bind-key 4-c		"urxvt"
+bind-key 4-c		"st"
 bind-key 4-p		"dmenu_run -b"
 bind-key 4-d		"firefox"
 bind-key 4-s		"tabbed -c surf -e"
@@ -101,10 +101,10 @@ bind-mouse 4-2		window-hide
 bind-mouse 4-3		window-resize
 
 # APPLICATION MENU
-command 		" Term" xterm
+command 		" Term" st
 command 		" WWW" firefox
-command 		" File Mgr" "urxvt -e nnn"
-command 		" IRC" "urxvt -e weechat"
+command 		" File Mgr" "st -e nnn"
+command 		" IRC" "st -e weechat"
 command 		" Torrents " transmission-gtk
 command 		" Music " "urxvt -e cmus"
 
