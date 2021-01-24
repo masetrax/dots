@@ -1,8 +1,9 @@
-hsetroot -solid "#FDF6E3"
+hsetroot -solid "#323232"
 
 if [ $(uname -s) = "OpenBSD" ]; then
     xrdb ~/.Xdefaults
     exec cwm
+    #exec sdorfehs
 else [ $(uname -s) = "NetBSD" ]; 
     xrdb ~/.Xresources
     sxhkd -c "$HOME/.config/berry/sxhkdrc" &

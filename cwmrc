@@ -5,10 +5,10 @@ color inactiveborder	"#606060"
 color groupborder 	"#6199BF"
 color ungroupborder 	"#BF616A"
 color urgencyborder 	"#ebcb8b"
-color menubg 		"#FDF6E3"
-color menufg 		"#323232"
-color font 		"#323232"
-color selfont 		"#FDF6E3"
+color menubg 		"#323232"
+color menufg 		"#FDF6E3"
+color font 		"#FDF6E3"
+color selfont 		"#323232"
 fontname 		"monospace:size=10:bold"
 gap 20 20 20 20
 
@@ -89,7 +89,7 @@ bind-key 4-h		window-htile
 
 # CUSTOM APPLICATION KEY BINDINGS
 bind-key 4S-s		/home/masetrax/.code/dmenu_bar.sh
-bind-key 4-Return 	"urxvt"
+bind-key 4-Return 	"st"
 bind-key 4-c		"st"
 bind-key 4-p		"dmenu_run -b"
 bind-key 4-d		"firefox"
@@ -106,7 +106,7 @@ command 		" WWW" firefox
 command 		" File Mgr" "st -e nnn"
 command 		" IRC" "st -e weechat"
 command 		" Torrents " transmission-gtk
-command 		" Music " "urxvt -e cmus"
+command 		" Music " "st -e cmus"
 
 # AUTOGROUPING
 autogroup 1 		"surf", "Surf"
