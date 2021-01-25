@@ -2,14 +2,14 @@
 borderwidth 1
 color activeborder 	"#323232"
 color inactiveborder	"#606060"
-color groupborder 	"#6199BF"
-color ungroupborder 	"#BF616A"
-color urgencyborder 	"#ebcb8b"
-color menubg 		"#323232"
-color menufg 		"#FDF6E3"
-color font 		"#FDF6E3"
-color selfont 		"#323232"
-fontname 		"monospace:size=10:bold"
+color groupborder 	"#6587bf"
+color ungroupborder 	"#db7070"
+color urgencyborder 	"#d69822"
+color menubg 		"#F4F4F4"
+color menufg 		"#676767"
+color font 		"#676767"
+color selfont 		"#F4F4F4"
+fontname 		"Noto Mono:pixelsize=14:antialias=true"
 gap 20 20 20 20
 
 # WINDOW SNAPPING
