@@ -23,7 +23,7 @@ ignore 			"bar"
 # STICKY MODE
 sticky 			yes
 
-# KEY BINDING LEGENDw
+# KEY BINDING LEGEND
 # C			Control Key
 # M			Meta (ALT) Key
 # S			Shift Key
@@ -92,7 +92,7 @@ bind-key 4S-s		/home/masetrax/.code/dmenu_bar.sh
 bind-key 4-Return 	"st"
 bind-key 4-c		"st"
 bind-key 4-p		"dmenu_run -b"
-bind-key 4-d		"firefox"
+bind-key 4-w		"vimb"
 bind-key 4-s		"tabbed -c surf -e"
 
 # MOUSE BINDINGS
