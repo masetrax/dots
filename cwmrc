@@ -1,6 +1,6 @@
 # APPEARANCE
 borderwidth 1
-color activeborder 	"#323232"
+color activeborder 	"#232323"
 color inactiveborder	"#606060"
 color groupborder 	"#6587bf"
 color ungroupborder 	"#db7070"
@@ -10,7 +10,7 @@ color menufg 		"#676767"
 color font 		"#676767"
 color selfont 		"#F4F4F4"
 fontname 		"Noto Mono:pixelsize=14:antialias=true"
-gap 20 20 20 20
+gap 25 25 25 25
 
 # WINDOW SNAPPING
 moveamount 		1	# Set a default size for the keyboard movement bindings, in pixels.
@@ -46,7 +46,6 @@ bind-key 4-7		group-toggle-7
 bind-key 4-8		group-toggle-8
 bind-key 4-9		group-toggle-9
 bind-key 4-0		group-toggle-all
-bind-key 4-g		window-group
 bind-key 4S-1		window-movetogroup-1
 bind-key 4S-2		window-movetogroup-2
 bind-key 4S-3		window-movetogroup-3
@@ -76,24 +75,27 @@ bind-key CS-8		group-close-8
 bind-key CS-9		group-close-9
 
 # WINDOW KEY BINDINGS
-bind-key 4-Right	window-cycle
-bind-key 4-Left		window-rcycle
-bind-key 4-x		window-delete
-bind-key 4S-h		window-hide
+bind-key 4-q		window-delete
+bind-key 4-c		window-hide
 bind-key 4S-r 		restart
 bind-key 4S-q		quit
 bind-key 4-f		window-fullscreen
 bind-key 4-m		window-maximize
 bind-key 4-v		window-vtile
 bind-key 4-h		window-htile
+bind-key 4S-v		window-vmaximize
+bind-key 4S-h		window-hmaximize
+bind-key 4S-o		window-snap-left
+bind-key 4S-p		window-snap-right
 
 # CUSTOM APPLICATION KEY BINDINGS
 bind-key 4S-s		/home/masetrax/.code/dmenu_bar.sh
 bind-key 4-Return 	"st"
-bind-key 4-c		"st"
-bind-key 4-p		"dmenu_run -b"
-bind-key 4-w		"vimb"
+bind-key 4-d		"dmenu_run -b"
+bind-key 4-w		"iridium"
 bind-key 4-s		"tabbed -c surf -e"
+bind-key 4S-x		"xterm"
+bind-key CM-Delete	"slock"
 
 # MOUSE BINDINGS
 bind-mouse 4-1		window-move
@@ -102,15 +104,16 @@ bind-mouse 4-3		window-resize
 
 # APPLICATION MENU
 command 		" Term" st
-command 		" WWW" firefox
+command			" WWW" "tabbed -c surf -e"
 command 		" File Mgr" "st -e nnn"
 command 		" IRC" "st -e weechat"
-command 		" Torrents " transmission-gtk
+command 		" Torrents " "st -e rtorrent"
 command 		" Music " "st -e cmus"
+command			" Restart" restart
+command			" Quit" quit
 
 # AUTOGROUPING
-autogroup 1 		"surf", "Surf"
-autogroup 1 		"tabbed", "tabbed"
-autogroup 2  		Firefox
-autogroup 5 		Transmission-gtk
+autogroup 2 		"surf", "Surf"
+autogroup 2		"tabbed", "tabbed"
+autogroup 2  		"iridium"
 

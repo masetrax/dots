@@ -1,0 +1,43 @@
+autoconf-2.70       automatically configure source code on many Un*x platforms
+automake-1.16.3     GNU Standards-compliant Makefile generator
+bash-5.1.4          GNU Bourne Again Shell
+cmus-2.8.0p0        ncurses-based music player
+dunst-1.5.0         customizable and lightweight notification-daemon
+dzen2-0.9.5p2-xft   general purpose messaging, notification and menu program
+exa-0.9.0p0         ls alternative written in Rust
+feh-3.6.1           lightweight image viewer
+figlet-2.2.5        generates ASCII banner art
+go-fonts-20170401   Go TrueType fonts
+gstreamer1-1.18.3   framework for streaming media
+gstreamer1-plugins-bad-1.18.3 bad elements for GStreamer
+gstreamer1-plugins-base-1.18.3 base elements for GStreamer
+gstreamer1-plugins-good-1.18.3 good elements for GStreamer
+gstreamer1-plugins-libav-1.18.3 ffmpeg elements for GStreamer
+gstreamer1-plugins-ugly-1.18.3 ugly elements for GStreamer
+hsetroot-1.0.5      wallpaper changer, works with compositors
+htop-3.0.2          interactive process viewer
+imlib2-1.4.10       image manipulation library
+iridium-2020.11.85  Iridium browser
+mpv-0.33.0p1        movie player based on MPlayer/mplayer2
+ncspot-0.3.0        ncurses Spotify client
+neofetch-7.1.0      system information tool written in bash
+nnn-3.5             the missing terminal file browser for X
+noto-emoji-20200408 emoji fonts for the noto font family
+noto-fonts-20171024 pan-unicode font family
+picom-8.2           lightweight compositor for X11
+portslist-7.33      full list of pkgpaths in ports
+rtorrent-0.9.6p8v0  ncurses BitTorrent client based on libTorrent
+scrot-0.8p4         commandline screen capture util
+sxiv-26             simple X Image Viewer
+terminus-font-4.47p2 fixed width fonts especially for long hacking sessions
+tree-0.62           print ascii formatted tree of a directory structure
+unrar-6.00v2        extract, list, and test RAR archives
+unzip-6.0p14-iconv  extract, list & test files in a ZIP archive
+vim-8.2.2401-no_x11 vi clone, many additional features
+webkitgtk4-2.30.4   GTK+ port of the WebKit rendering engine
+weechat-3.0.1       fast, light and extensible chat client
+wget-1.20.3p3       retrieve files from the web via HTTP, HTTPS and FTP
+xautolock-2.2       fire up programs in case of user inactivity under X
+zathura-0.4.5       document viewer for PDF and other formats with a vi-like UI
+zathura-cb-0.1.8p2  comic book plugin for zathura
+zip-3.0p1           create/update ZIP files compatible with PKZip(tm)
