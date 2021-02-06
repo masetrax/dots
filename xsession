@@ -7,13 +7,13 @@ hsetroot -solid "#676767"
 
 if [ $(uname -s) = "OpenBSD" ]; then
     xrdb ~/.Xresources
-    cwm_bar &
     picom --config ~/.config/compton.conf &
     dunst &
+    #cwm_bar
     #exec cwm
-    #slstatus &
-    #exec dwm
-    exec sdorfehs
+    dwm_bar &
+    exec dwm
+    #exec sdorfehs
 else [ $(uname -s) = "NetBSD" ]; 
     xrdb ~/.Xresources
     sxhkd -c "$HOME/.config/berry/sxhkdrc" &
