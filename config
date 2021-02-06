@@ -1,5 +1,5 @@
 set barpadding 20 10
-set gap 22
+set gap 25
 set ignoreresizehints 1
 set onlyborder 0
 
@@ -8,35 +8,29 @@ bind C-s split
 bind S hsplit
 bind C-S hsplit
 
-bind c exec urxvt
-bind C-c exec urxvt
+bind c exec st
+bind C-c exec st
+
+definekey top s-s exec tabbed -c surf -e
+definekey top s-w exec iridium
+definekey top  s-d exec dmenu_run -b
+definekey top  s-r restart
+definekey top  s-q quit
 
 # lock the screen
-bind L exec xset s activate
+bind L exec slock
 
 # prevent accidental closes
 unbind k
 
 # swap workspaces, but define it in 'top' to avoid having to prefix with C-a
-definekey top M-1 vselect 0
-definekey top M-2 vselect 1
-definekey top M-3 vselect 2
-definekey top M-4 vselect 3
+definekey top s-1 vselect 0
+definekey top s-2 vselect 1
+definekey top s-3 vselect 2
+definekey top s-4 vselect 3
 
 # quickly jump to music
 definekey root 9 exec sdorfehs -c "vselect 0" -c "fselect 2" -c "select 9"
-
-# map to matebook F keys
-#definekey top F1 exec sdorfehs -c "echo backlight: `xbacklight -dec 5 -time 0; xbacklight | sed 's/\..*//'`"
-#definekey top F2 exec sdorfehs -c "echo backlight: `xbacklight -inc 5 -time 0; xbacklight | sed 's/\..*//'`"
-definekey top F2 exec sndioctl -q output.mute=!; pkill -USR1 i3status; true
-definekey top F3 exec sndioctl -q output.mute=0; sndioctl -q output.level=-0.05; pkill -USR1 i3status; true
-definekey top F4 exec sndioctl -q output.mute=0; sndioctl -q output.level=+0.05; pkill -USR1 i3status; true
-
-#definekey top F10 exec ~/bin/music prev
-#definekey top F11 exec ~/bin/music playpause
-#definekey top F12 exec ~/bin/music next
-#definekey top M-F12 exec ~/bin/music nextalbum
 
 # i like tab just going between the same two windows
 bind Tab focuslast
@@ -53,11 +47,10 @@ unmanage OpenSSH Authentication Passphrase Request
 unmanage dzen title
 
 # startup configuration
-exec ruby ~/bin/sdorfehs-bar/sdorfehs-bar.rb
-frestore (frame :number 0 :x 0 :y 40 :width 1080 :height 1400 :screenw 2160 :screenh 1440),(frame :number 1 :x 1080 :y 40 :width 1080 :height 1120 :screenw 2160 :screenh 1440),(frame :number 2 :x 1080 :y 1160 :width 1080 :height 280 :screenw 2160 :screenh 1440)
-execf 0 env RUN_AND_RETURN=mutt urxvt
-execf 1 urxvt
+frestore (frame :number 0 :x 0 :y 40 :width 1080 :height 1400 :screenw 2160 :screenh 1440),(frame :number 1 :x 1080 :y 40 :width 1080 :height 1160 :screenw 2160 :screenh 1440),(frame :number 2 :x 1080 :y 1195 :width 1080 :height 230 :screenw 2160 :screenh 1440)
+execf 0 env RUN_AND_RETURN=mutt st
+execf 1 st
 fselect 2
-execf 2 audacious
+execf 2 st -e htop
 #number 9
 exec sleep 1; sdorfehs -c "number 9" -c "fselect 1" -c stick -c "fselect 0" -c stick

@@ -109,8 +109,6 @@ command 		" File Mgr" "st -e nnn"
 command 		" IRC" "st -e weechat"
 command 		" Torrents " "st -e rtorrent"
 command 		" Music " "st -e cmus"
-command			" Restart" restart
-command			" Quit" quit
 
 # AUTOGROUPING
 autogroup 2 		"surf", "Surf"
