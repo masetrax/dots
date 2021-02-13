@@ -1,0 +1,3 @@
+colorscheme nerdz
+colorscheme 
+bind common <key> colorscheme
