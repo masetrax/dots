@@ -1,8 +1,17 @@
+! General Appearance
 URxvt.font: xft:monospace:size=11
 URxvt.letterSpace: -1
 URxvt.internalBorder: 20
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
-URxvt.url-launcher: HOME/bin/firefox
 URxvt.geometry: 80x24
 URxvt.cursorBlink: true
+
+! Hide cursor when typing
+URxvt.pointerBlank: true
+
+! Support right-clicking urls to open them
+URxvt.perl-ext-common: default,matcher,selection-to-clipboard,-selection
+URxvt.matcher.button: 3
+URxvt.matcher.rend.0: Uline
+URxvt.url-launcher: /usr/local/bin/firefox
