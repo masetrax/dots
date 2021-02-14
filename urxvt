@@ -1,0 +1,8 @@
+URxvt.font: xft:monospace:size=11
+URxvt.letterSpace: -1
+URxvt.internalBorder: 20
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.url-launcher: HOME/bin/firefox
+URxvt.geometry: 80x24
+URxvt.cursorBlink: true
