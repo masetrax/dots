@@ -1,7 +1,0 @@
-#include "colours/light"
-
-*.font: Noto Sans :style=Regular:size=10:antialias=true
-*.italicFont: Noto Sans:style=Italic:size=10:antialias=true
-*.boldFont: Noto Sans:style=Bold:size=10:antialias=true
-
-*.scrollBar:	false

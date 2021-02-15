@@ -1,1 +1,0 @@
-alias dots='cd ~/dots'
